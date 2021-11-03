@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Montserat";
+    src: url("assets/Montserrat-Bold.otf");
+    src: url("assets/Montserrat-Medium.otf");
+    src: url("assets/Montserrat-Regular.otf");
+    src: url("assets/Montserrat-Light.otf");
+}
+
+body{
+
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Montserat";
+    display: flex;
+}
+
+.container{
+
+    max-width: 500px;
+    margin: 50px
+}
+
+.title::before{
+
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: rgb(255, 145, 66);
+    top:50%;
+    left: 20px;
+    
+
+}
+
+.title::after{
+
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: rgb(255, 145, 66);
+    top:50%;
+    right: 20px;
+}
+.title{
+
+    font-size: 40px;
+    position: relative;
+    max-width: 300px;
+    text-align: center;
+}
+
+.text-about, .text-about2,  .text-about3 {
+
+    max-width: 300px;
+    margin: 0 20px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.text-about2{
+
+    text-align: left;
+}
+
+.text-about3{
+
+    text-align: right;
+}
